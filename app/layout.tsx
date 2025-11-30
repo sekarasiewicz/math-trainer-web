@@ -14,11 +14,56 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://math-trainer.karasiewicz.dev";
+
 export const metadata: Metadata = {
-  title: "Math Trainer - Master Arithmetic with Fun",
-  description: "An engaging iOS educational game to practice and master basic arithmetic operations through interactive gameplay. Available on the App Store.",
-  keywords: ["math", "trainer", "education", "iOS", "arithmetic", "learning", "kids", "practice"],
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Math Trainer - Master Arithmetic with Fun",
+    template: "%s | Math Trainer",
+  },
+  description: "An engaging iOS educational game to practice and master basic arithmetic operations through interactive gameplay. 5 game modes, progress tracking, and achievements. Available on the App Store.",
+  keywords: ["math trainer", "arithmetic practice", "math game", "iOS education app", "kids math", "addition", "subtraction", "multiplication", "division", "math practice app"],
   authors: [{ name: "Sebastian Karasiewicz" }],
+  creator: "Sebastian Karasiewicz",
+  publisher: "Sebastian Karasiewicz",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: siteUrl,
+    siteName: "Math Trainer",
+    title: "Math Trainer - Master Arithmetic with Fun",
+    description: "An engaging iOS educational game to practice and master basic arithmetic operations through interactive gameplay. 5 game modes, progress tracking, and achievements.",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Math Trainer - iOS Math Practice App",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Math Trainer - Master Arithmetic with Fun",
+    description: "An engaging iOS educational game to practice and master basic arithmetic operations. 5 game modes, progress tracking, and achievements.",
+    images: ["/og-image.jpg"],
+  },
+  alternates: {
+    canonical: siteUrl,
+  },
+  category: "education",
 };
 
 export default function RootLayout({

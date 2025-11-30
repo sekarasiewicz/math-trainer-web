@@ -2,8 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy - Math Trainer",
-  description: "Privacy Policy for Math Trainer iOS App. We do not collect any personal data.",
+  title: "Privacy Policy",
+  description: "Privacy Policy for Math Trainer iOS App. We do not collect any personal data. No tracking, no ads, no account required.",
+  alternates: {
+    canonical: "https://math-trainer.karasiewicz.dev/privacy",
+  },
 };
 
 export default function PrivacyPolicy() {
