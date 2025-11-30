@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import Image from "next/image";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,7 +35,7 @@ export default function RootLayout({
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-16">
               <Link href="/" className="flex items-center gap-2">
-                <span className="text-2xl">🧮</span>
+                <Image src="/logo.jpg" alt="Math Trainer Logo" width={32} height={32} className="rounded-lg" />
                 <span className="font-semibold text-lg">Math Trainer</span>
               </Link>
               <div className="flex items-center gap-6">
@@ -53,7 +54,7 @@ export default function RootLayout({
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <div className="flex items-center gap-2">
-                <span className="text-xl">🧮</span>
+                <Image src="/logo.jpg" alt="Math Trainer Logo" width={24} height={24} className="rounded-md" />
                 <span className="font-medium">Math Trainer</span>
               </div>
               <div className="flex gap-6 text-sm text-zinc-600 dark:text-zinc-400">

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   const features = [
     {
@@ -45,7 +47,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-blue-50 to-white dark:from-zinc-900 dark:to-zinc-950">
         <div className="max-w-6xl mx-auto text-center">
-          <div className="text-7xl mb-6">🧮</div>
+          <Image src="/logo.jpg" alt="Math Trainer Logo" width={120} height={120} className="rounded-3xl mx-auto mb-6 shadow-lg" />
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-zinc-900 dark:text-white mb-6">
             Math Trainer
           </h1>
