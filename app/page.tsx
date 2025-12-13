@@ -69,8 +69,43 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Game Modes Section */}
+      {/* Screenshots Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-zinc-950">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold text-center text-zinc-900 dark:text-white mb-4">
+            See It in Action
+          </h2>
+          <p className="text-center text-zinc-600 dark:text-zinc-400 mb-12 max-w-2xl mx-auto">
+            Clean, intuitive interface designed for focused practice
+          </p>
+          <div className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide">
+            {[
+              { src: "/screenshots/01_HomeScreen.png", alt: "Home Screen" },
+              { src: "/screenshots/02_GameSettings.png", alt: "Game Settings" },
+              { src: "/screenshots/06_GameInProgress.png", alt: "Game in Progress" },
+              { src: "/screenshots/03_Statistics.png", alt: "Statistics" },
+              { src: "/screenshots/04_Achievements.png", alt: "Achievements" },
+              { src: "/screenshots/05_AppSettings.png", alt: "App Settings" },
+            ].map((screenshot) => (
+              <div
+                key={screenshot.src}
+                className="flex-shrink-0 snap-center first:ml-auto last:mr-auto"
+              >
+                <Image
+                  src={screenshot.src}
+                  alt={screenshot.alt}
+                  width={250}
+                  height={542}
+                  className="rounded-3xl shadow-2xl border border-zinc-200 dark:border-zinc-700"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Game Modes Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-zinc-50 dark:bg-zinc-900">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center text-zinc-900 dark:text-white mb-4">
             Choose Your Challenge
@@ -93,7 +128,7 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="py-20 px-4 sm:px-6 lg:px-8 bg-zinc-50 dark:bg-zinc-900">
+      <section id="features" className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-zinc-950">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center text-zinc-900 dark:text-white mb-4">
             Features
@@ -119,7 +154,7 @@ export default function Home() {
       </section>
 
       {/* Difficulty Levels */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-zinc-950">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-zinc-50 dark:bg-zinc-900">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center text-zinc-900 dark:text-white mb-4">
             Difficulty for Everyone
@@ -165,7 +200,7 @@ export default function Home() {
       </section>
 
       {/* Privacy Highlight */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-zinc-50 dark:bg-zinc-900">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-zinc-950">
         <div className="max-w-4xl mx-auto text-center">
           <div className="text-5xl mb-6">🔒</div>
           <h2 className="text-3xl font-bold text-zinc-900 dark:text-white mb-4">
