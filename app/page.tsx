@@ -56,7 +56,7 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
-              href="#"
+              href="https://apps.apple.com/pl/app/math-trainer-pro/id6756526806"
               className="inline-flex items-center gap-2 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 px-8 py-4 rounded-full font-medium text-lg hover:bg-zinc-700 dark:hover:bg-zinc-200 transition-colors"
             >
               <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
@@ -241,7 +241,7 @@ export default function Home() {
             Download Math Trainer and make arithmetic practice fun and effective.
           </p>
           <a
-            href="#"
+            href="https://apps.apple.com/pl/app/math-trainer-pro/id6756526806"
             className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-full font-medium text-lg hover:bg-blue-50 transition-colors"
           >
             <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
